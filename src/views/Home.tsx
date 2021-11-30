@@ -4,7 +4,7 @@ import { startAttestation } from '@simplewebauthn/browser'
 import axios from 'axios'
 
 const Home: Component = () => {
-  const API_URL: string = 'http://localhost:4300'
+  const API_URL: string = 'https://webauthn.authmosis.com'
 
   const router = useRouter()
 

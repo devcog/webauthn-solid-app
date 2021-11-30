@@ -9,7 +9,7 @@ const Register: Component = () => {
     email: ''
   })
 
-  const API_URL = 'http://localhost:4300'
+  const API_URL = 'https://webauthn.authmosis.com'
 
   const onRegister = async (e: any): Promise<void> => {
     e.preventDefault()
