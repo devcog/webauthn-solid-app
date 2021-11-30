@@ -9,7 +9,7 @@ const Login: Component = () => {
 
   const [email, setEmail] = createSignal('')
 
-  const API_URL = 'https://webauthn.authmosis.com'
+  const API_URL = 'https://authmosis.com'
 
   const onLogin = async (e: any) => {
     e.preventDefault()
