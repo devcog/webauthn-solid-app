@@ -2,6 +2,7 @@ import type { Component } from 'solid-js'
 import { createSignal } from 'solid-js'
 import { startAttestation } from '@simplewebauthn/browser'
 import axios from 'axios'
+import dotenv from 'dotenv'
 
 const Register: Component = () => {
   const [userDetails, setUserDetails] = createSignal({
@@ -9,7 +10,8 @@ const Register: Component = () => {
     email: ''
   })
 
-  const API_URL = 'https://authmosis.com'
+// URL of the remote auth identity provider server
+const API_URL = import.meta.env.API_URL
 
   const onRegister = async (e: any): Promise<void> => {
     e.preventDefault()

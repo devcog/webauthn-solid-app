@@ -9,7 +9,7 @@ const Login: Component = () => {
 
   const [email, setEmail] = createSignal('')
 
-  const API_URL = 'https://authmosis.com'
+  const API_URL = import.meta.env.API_URL
 
   const onLogin = async (e: any) => {
     e.preventDefault()
