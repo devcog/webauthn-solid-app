@@ -11,7 +11,8 @@ const Register: Component = () => {
   })
 
 // URL of the remote auth identity provider server
-const API_URL = import.meta.env.API_URL
+const API_URL = 'https://authmosis.com' //'http://localhost:8089'//import.meta.env.API_URL;
+  console.log("API_URL: " + API_URL);
 
   const onRegister = async (e: any): Promise<void> => {
     e.preventDefault()

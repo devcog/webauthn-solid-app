@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const Home: Component = () => {
   //const API_URL: string = 'http://localhost:8089'
-  const API_URL = import.meta.env.API_URL
+  const API_URL ='https://authmosis.com' //'http://localhost:8089' // import.meta.env.API_URL
 
   const router = useRouter()
 
