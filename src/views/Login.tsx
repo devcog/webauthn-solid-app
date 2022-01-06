@@ -9,8 +9,9 @@ const Login: Component = () => {
 
   const [email, setEmail] = createSignal('')
 
-  const API_URL = 'https://authmosis.com'//'http://localhost:8089'//import.meta.env.API_URL
 
+  const API_URL = import.meta.env.VITE_API_URL //'http://localhost:8080'//'https://authmosis.com'//import.meta.env.API_URL
+// process.env.SOLID_APP_API_URL
   const onLogin = async (e: any) => {
     e.preventDefault()
 
