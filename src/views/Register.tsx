@@ -2,6 +2,7 @@ import type { Component } from 'solid-js'
 import { createSignal } from 'solid-js'
 import { startAttestation } from '@simplewebauthn/browser'
 import axios from 'axios'
+import {Link} from "@rturnq/solid-router";
 
 const Register: Component = () => {
   const [userDetails, setUserDetails] = createSignal({
@@ -50,7 +51,9 @@ const API_URL = import.meta.env.VITE_API_URL //'http://localhost:8080' set in en
       style={{ height: '100vh', width: '100vw' }}
       class="d-flex justify-center align-items-center p-5 mb-4 bg-light rounded-3"
     >
-      <div class="container-fluid">
+
+      <div class="container-fluid py-5">
+        <Link href="/login">Login</Link>
         <h1 class="display-5 fw-bold mb-4">Register</h1>
         <form onSubmit={onRegister}>
           <input
